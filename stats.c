@@ -56,6 +56,9 @@ void main() {
   printf("\n\n");
 }
 
+/* Add other Implementation File Code Here */
+
+
 unsigned char find_maximum(unsigned char *array,int size)
 {
         unsigned char max;
@@ -144,4 +147,3 @@ void print_statistics(unsigned char mean,unsigned char median,unsigned char mini
 	printf("\nMinimum = %u",minimum);
 	printf("\nMaximum = %u",maximum);
 }
-/* Add other Implementation File Code Here */
