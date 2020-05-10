@@ -51,7 +51,7 @@ void main() {
   maximum = find_maximum(test,SIZE);
                              
   print_statistics(mean,median,minimum,maximum);
-  printf("\n\nArray after sorting: (Ascending order)\n");
+  printf("\n\nArray after sorting: (Descending order)\n");
   print_array(test,SIZE);
   printf("\n\n");
 }
@@ -121,7 +121,7 @@ void sort_array(unsigned char *array,int size)
 
 	for(outerLoop=0;outerLoop<size-1;outerLoop++)
 		for(innerLoop=(outerLoop+1);innerLoop<size;innerLoop++)
-			if(array[outerLoop]>array[innerLoop])
+			if(array[outerLoop]<array[innerLoop])
 			{
 				tempValue=array[outerLoop];
 				array[outerLoop]=array[innerLoop];

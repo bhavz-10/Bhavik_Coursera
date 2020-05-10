@@ -73,7 +73,7 @@ void sort_array(unsigned char *array,int size);
  *
  * This function takes input the address of the array.
  * It stores it into the pointer and then uses it to
- * sort the elements in the array in ascending order.
+ * sort the elements in the array in descending order.
  *
  * @param *array The array whose elements are supposed to be sorted
  * @param size The size of the array
