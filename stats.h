@@ -26,7 +26,7 @@
 
 /* Add Your Declarations and Function Comments here */ 
 
-void print_statistics(int mean,int median,int minimum,int maximum);
+void print_statistics(unsigned char mean,unsigned char median,unsigned char minimum,unsigned char maximum);
 /**
  * @brief Prints the statistics data
  *
@@ -94,6 +94,34 @@ unsigned char find_mean(unsigned char *array,int size);
  * @param *array The array whose elements are supposed to be sorted
  * @param size The size of the array
  * @return it returns the mean of the elements.
+ */
+
+unsigned char find_minimum(unsigned char *array,int size);
+/**
+ * @brief It calculates the minimum of the elements in the array.
+ *
+ * This function takes input the address of the array.
+ * It stores it into the pointer and then uses it to
+ * calculate the minimum value of the elements
+ *
+ *
+ * @param *array The array whose elements are supposed to be sorted
+ * @param size The size of the array
+ * @return it returns the minimum of the elements.
+ */
+
+unsigned char find_maximum(unsigned char *array,int size);
+/**
+ * @brief It calculates the maximum of the elements in the array.
+ *
+ * This function takes input the address of the array.
+ * It stores it into the pointer and then uses it to
+ * calculate the maximum value of the elements
+ *
+ *
+ * @param *array The array whose elements are supposed to be sorted
+ * @param size The size of the array
+ * @return it returns the maximum of the elements.
  */
 
 
