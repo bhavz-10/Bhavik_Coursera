@@ -37,14 +37,47 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
+  unsigned char median;
+  unsigned char mean;
   /* Statistics and Printing Functions Go Here */
-  sort_array(test,SIZE);
-  
 
+  mean = find_mean(test,SIZE);
+  printf("\n%u\n",mean);
+}
+unsigned char find_mean(unsigned char *array,int size)
+{
+	int sum=0;
+	while(size>0)
+	{
+		sum+=*array;
+		array++;
+		size--;
+	}
+	return (sum/40);
+}
+unsigned char find_median(unsigned char *array,int size)
+{
+	if(size%2==0)
+	{
+		size=size/2;
+		return ((array[size-1]+array[size])/2);
+	}
 }
 void sort_array(unsigned char *array,int size)
 {
-	
+	int outerLoop,innerLoop;
+	unsigned char tempValue=0;
+
+	for(outerLoop=0;outerLoop<size-1;outerLoop++)
+		for(innerLoop=(outerLoop+1);innerLoop<size;innerLoop++)
+			if(array[outerLoop]>array[innerLoop])
+			{
+				tempValue=array[outerLoop];
+				array[outerLoop]=array[innerLoop];
+				array[innerLoop]=tempValue;
+			}
+
+
 }
 
 void print_array(unsigned char *array,int size)

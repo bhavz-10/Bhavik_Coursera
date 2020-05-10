@@ -51,13 +51,16 @@ void print_array(unsigned char *array,int size);
  * @return It does not need to return any value
  */
 
-int find_median(unsigned char *array,int size);
+unsigned char find_median(unsigned char *array,int size);
 /**
  * @brief Finds the median of the elements in the array.
  *
  * This function takes input the address of the array.
  * It stores it into the pointer and then uses it to
  * calculate the median of the array that is passed on to this function.
+ * 
+ * NOTE: The median that is calculated is in unsigned char so it will
+ * 	 be the floor value.
  *
  * @param *array The array whose median is supposed to be calculated
  * @param size The size of the array
@@ -76,6 +79,23 @@ void sort_array(unsigned char *array,int size);
  * @param size The size of the array
  * @return It does not return any value
  */
+
+unsigned char find_mean(unsigned char *array,int size);
+/**
+ * @brief It calculates the mean of the elements in the array.
+ *
+ * This function takes input the address of the array.
+ * It stores it into the pointer and then uses it to
+ * calculate the mean of the elements
+ *
+ * NOTE: It returns the mean in unsigned char so it is 
+ * 	 the floor value.
+ *
+ * @param *array The array whose elements are supposed to be sorted
+ * @param size The size of the array
+ * @return it returns the mean of the elements.
+ */
+
 
 
 #endif /* __STATS_H__ */
